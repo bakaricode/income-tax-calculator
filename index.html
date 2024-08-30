@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <section class="grid-container">
+        
+                <h2 id="grid1">Income tax calculator USA</h2>
+                <h3 id="grid2">Find out how much your salary is after tax</h3>
+                <img src="img/icon__main-header.png" alt="colorful logo!" id="grid3">
+        
+        <form action="#" method="get" id="form" id="grid4">
+          <label for="grossIncome">Enter your gross income</label>
+          <input type="number" id="grossIncome" name="grossIncome" class="input">
+          <label for="per">per</label>
+          <select name="per" id="per" class="input">
+            <option value="annual">Annual</option>
+          </select>
+          <div>
+            <label for="userState">
+              Where do you work?
+            </label>
+            <select id="userState" name="userState" class="input">
+              <optgroup label="states">
+                  <option value="Massachusetts">
+                  Massachusetts
+                  </option>
+                  <option value="New York">
+                  New York
+                  </option>
+                  <option value="California">
+                  California
+                  </option>
+                 <option value="North Carolina">
+                  North Carolina
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+            <button>Calculate</button>
+        </form>
+    </section>
+    <section class="summary">
+        <h2>summary</h2>
+         <p>If you make  $<span id="gross-output"></span> a year living in the region of <span id="state"> Anywhere</span>, USA, you will be taxed $<span id="tax"> </span>. That means that your net pay will be $<span id="net"></span> per year, or $<span id="monthly"></span> per month.<!-- Your average tax rate is <span id="state-tax-rate">__._</span>% and your marginal tax rate is <span id="state-marginal-tax-rate">__._</span>%. This marginal tax rate means that your immediate additional income will be taxed at this rate. For instance, an increase of $100 in your salary will be taxed $36.01, hence, your net pay will only increase by $63.99.--></p> 
+    </section>
+</body>
+</html>
+<script src="js/custom.js"></script>
